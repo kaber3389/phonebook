@@ -25,7 +25,6 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/main.js',
         'js/axios.min.js',
-        //'js/vue.js',
         'js/vue.min.js',
         'js/app.js',
     ];
