@@ -54,7 +54,7 @@ class ContactController extends Controller
             $contactIds[] = $contact->id;
         }
 
-        echo 11111111111111111111;
+        echo 111;
 
         echo "Total users: " . count($users) . "\n";
         echo "END \n";
