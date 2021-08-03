@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./fonts/Lato-Regular.woff2") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+html,
+body {
+    font-family: 'Lato-Regular', sans-serif;
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* фоновый цвет */
+    background: #fff;
+    z-index: 1001;
+}
+.preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.footer,
+.navbar-inverse,
+.navbar-inverse .navbar-brand {
+    background-color: #1f336f;
+    border-color: #080808;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.navbar-brand {
+    padding-left: 0;
+}
+.navbar-inverse,
+.navbar-inverse .navbar-brand {
+    height: 80px;
+    background: #fff;
+    color: #1f336f;
+}
+.navbar-brand > img {
+    width: 55px;
+}
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+.table-content {
+    margin-top: 20px;
+}
+.table-top th {
+    padding-left: 5px;
+}
+#navigation {
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    margin-top: 15px;
+}
+.navigation-static {
+    position: static;
+}
+.navigation-fixed {
+    position: sticky;
+    top: 80px;
+    background: #fff;
+    height: 40px;
+}
+.search-input {
+    position: relative;
+    width: 500px;
+    left: auto;
+    top: 25px;
+}
+.top-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-info h4 {
+    top: 25px;
+    position: relative;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+.table-toggle {
+    cursor: pointer;
+    margin-left: 20px;
+}
