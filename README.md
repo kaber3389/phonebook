@@ -1,2 +1,2 @@
 Phonebook
-#php, #LDAP, @MySQL, #Vue
+#php, #LDAP, #MySQL, #Vue
